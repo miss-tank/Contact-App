@@ -1,0 +1,54 @@
+<!--  Ankita Tank
+    - XML Layout for ContactActivity -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7c7c7"
+     tools:context=".MainActivity">
+
+    <!-- EditText Field to prompt the user to enter the first and Last name
+      - provide a hint to the user using the hint label with a hint string      -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="180dp"
+        android:hint="Enter your first and last name here "
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:backgroundTint="#815f08"
+        android:cursorVisible="false"
+        android:inputType="textCapWords"
+        />
+
+
+    <!-- Add to Contacts button which supports an onclick Listener and
+       - on button click it calls an actionListener which validates the input string
+       - and sets the intent to an in-built contact insert page -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add to contacts"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/contacts"
+        android:textSize="20dp"
+        android:layout_below="@+id/name"
+        />
+
+    <!-- The textview gives the status of the Result code from the contact activity
+       - in a form of a string -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contacts"
+        android:text="-"
+        android:id="@+id/statustext"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"/>
+
+    </RelativeLayout>

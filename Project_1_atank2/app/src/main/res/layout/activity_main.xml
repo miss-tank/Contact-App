@@ -1,0 +1,38 @@
+<!--  Ankita Tank
+    - XML Layout for MainActivity -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/iPhone7"
+    tools:context=".MainActivity">
+
+
+    <!-- TextView To show the welcome message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To The Add Contact App."
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/welcome_message"
+        android:layout_marginTop="180dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        />
+
+    <!-- Button which onclick switches the intent from MainActivity to Contact Activity
+        - using OnClick Listener -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/welcome_message"
+        android:fontFamily="sans-serif-condensed"
+        android:text="click here to begin"
+        android:layout_marginTop="20dp"
+        android:background="#818181"
+        android:id="@+id/contactpage"
+        android:textSize="30dp"
+        />
+
+</RelativeLayout>
